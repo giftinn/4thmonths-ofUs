@@ -235,9 +235,9 @@ pointer-events:none;
 
 <!-- welcome -->
 <section class="card active">
-<h1>THIS IS FOR YOU, KAA EL 💐</h1>
-<p>I made something special for you.<br></p>
-<button onclick="next()">Continue</button>
+<h1>Happy 4th Mensive, Love</h1>
+<p>I Made something special, but you need to unlock it first.<br></p>
+<button onclick="next()">Unlock</button>
 </section>
 
 <!-- pin -->
@@ -277,7 +277,7 @@ Points: <span id="score">0</span> / 3
 <!-- final -->
 <section class="card">
 
-<h1>Directly for You</h1>
+<h1>Chapter Four Unlocked</h1>
 
 <div class="lovebox">
 <div class="timer-title">TIME WITH YOU</div>
@@ -324,7 +324,7 @@ function next(){
 ================================================= */
 
 let pinInput = '';
-const correctPin = '3009';
+const correctPin = '0211';
 const pinDisplay = document.getElementById("pin");
 
 function renderDots(){
@@ -373,18 +373,18 @@ function checkPin(){
 
 const questions = [
 {
-    q:"do you love mee?",
-    options:["Yes","Yes","Yes"],
+    q:"When did we first meet?",
+    options:["September","Desember","November"],
     correct:2
 },
 {
-    q:"After all, tell me honestly, would you still love me the same?",
-    options:["No","Maybe(?)","Yes"],
+    q:"What do i do, when i miss you?",
+    options:["Sleep","Text you","Pretending i'm fine"],
     correct:1
 },
 {
-    q:"are you happy after meeting me?",
-    options:["Yes","No","Maybe"],
+    q:"Who loves harder?",
+    options:["Both of us","You","Me"],
     correct:0
 }
 ];
@@ -425,7 +425,7 @@ function checkAnswer(i,btn){
         scoreEl.textContent = score;
 
         btn.classList.add("correctAnim");
-        feedback.textContent = "Benar 🤍";
+        feedback.textContent = "Correct🤍";
 
         setTimeout(()=>{
             currentQ++;
@@ -440,7 +440,7 @@ function checkAnswer(i,btn){
     }else{
 
         btn.classList.add("wrongAnim");
-        feedback.textContent = "Oh tidak, coba lagi";
+        feedback.textContent = "Oh no, Try again!";
     }
 }
 
@@ -451,7 +451,7 @@ function checkAnswer(i,btn){
 
 function startTimer(){
 
-    const start = new Date("2025-08-09T00:00:00");
+    const start = new Date("2025-10-27T00:00:00");
 
     setInterval(()=>{
 
@@ -485,8 +485,8 @@ function revealMemory(el){
     `;
 
     const text = `
-hii kaa ell, how are you and how's your day? i hope your life is fine. thank you for being in my life, you really make me happy. honestly, i never thought i would meet and fall in love with you, i never even thought i would be happy like this because of you. honestly, i miss us when we first met, can you act like that again?
-`;
+120 days with you feels like the sweetest blessing.
+‎Thank you for loving me the way you do. Thank you for being my comfort, my safe place, and my favorite person. You make ordinary days feel special just by being in them. With you, I feel heard, appreciated, and loved in the simplest but deepest ways. I'm so lucky to have you and I still choose you as always.`;
 
     const paragraphs = text.split("\n\n");
 
@@ -501,7 +501,7 @@ hii kaa ell, how are you and how's your day? i hope your life is fine. thank you
     function typeParagraph(){
 
         if(p>=paragraphs.length){
-            sign.innerHTML="Sincerely<br>alien imup :p";
+            sign.innerHTML="Sincerely<br> Eran";
             return;
         }
 
